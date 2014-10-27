@@ -1,0 +1,5 @@
+.panel.panel-primary
+    .panel-heading.text-center Featured Services
+    .panel-body
+        .row(ng-repeat="service in services |filter:(featured.true)")
+            .col-md-12 {{service.titre}}

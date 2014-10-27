@@ -1,0 +1,15 @@
+.container
+    .jumbotron
+        h1 ServiceStore WebApp
+        p Welcome to ServiceStore, a Web Application example created with the MEAN Stack
+        p Still Under-Development
+        p AngularJS in the FrontEnd - NodeJS and ExpressJs in the BackEnd
+        p and MongoDB(NoSQL Database)
+        p Test by using Username: alireza and Password: alireza
+        p For the source code visit :
+            a(target='_blank', href="https://github.com/alirezamoradi/service-store")  My GitHub Repo
+    .row
+        .col-md-6
+            div(ng-include="'partials/main/featured-services'")
+        .col-md-6
+            div(ng-include="'partials/main/new-services'")

@@ -1,0 +1,51 @@
+.container
+    .well
+        form.form-horizontal(name"serviceForm")
+            fieldset
+                legend New Service
+                .form-group
+                    label.col-md-2.control-label(for="region") Region
+                    .col-md-10
+                        input.form-control(name="region", type="text", placeholder="region", ng-model="region")
+                .form-group
+                    label.col-md-2.control-label(for="departement") Departement
+                    .col-md-10
+                        input.form-control(name="departement", type="text", placeholder="departement", ng-model="departement")
+                .form-group
+                    label.col-md-2.control-label(for="cpostal") Code Postal
+                    .col-md-10
+                        input.form-control(name="cpostal", type="text", placeholder="cpostal", ng-model="cpostal")
+                .form-group
+                    label.col-md-2.control-label(for="categorie") Categorie
+                    .col-md-10
+                        input.form-control(name="categorie", type="text", placeholder="categorie", ng-model="categorie")
+                .form-group
+                    label.col-md-2.control-label(for="sousCategorie") Sous Categorie
+                    .col-md-10
+                        input.form-control(name="sousCategorie", type="text", placeholder="sousCategorie", ng-model="sousCategorie")
+                .form-group
+                    label.col-md-2.control-label(for="titre") Titre
+                    .col-md-10
+                        input.form-control(name="titre", type="text", placeholder="titre", ng-model="titre", required)
+                .form-group
+                    label.col-md-2.control-label(for="description") Description
+                    .col-md-10
+                        input.form-control(name="description", type="text", placeholder="description", ng-model="description")
+                .form-group
+                    label.col-md-2.control-label(for="prix") Prix
+                    .col-md-10
+                        input.form-control(name="prix", type="text", placeholder="prix", ng-model="prix")
+                .form-group
+                    label.col-md-2.control-label(for="email") Email
+                    .col-md-10
+                        input.form-control(name="email", type="email", placeholder="email", ng-model="email")
+                .form-group
+                    label.col-md-2.control-label(for="phone") Phone
+                    .col-md-10
+                        input.form-control(name="phone", type="text", placeholder="phone", ng-model="phone")
+                .form-group
+                    .col-md-10.col-md-offset-2
+                        .pull-right
+                            button.btn.btn-primary(ng-click="newService()", ng-disabled="serviceForm.$invalid") Submit
+                            | &nbsp;
+                            a.btn.btn-default(href="/") Cancel

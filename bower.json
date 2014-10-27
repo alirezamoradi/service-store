@@ -1,0 +1,21 @@
+{
+  "name": "ServiceStore",
+  "version": "0.0.0",
+  "authors": [
+    "Alireza MORADI <contact@alirezamoradi.com>"
+  ],
+  "description": "\"Offrir ou demander un Service\"",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "toastr": "~2.0.3",
+    "angular": "~1.3.0",
+    "angular-resource": "~1.3.0",
+    "angular-route": "~1.3.0",
+    "bootstrap": "~3.2.0"
+  }
+}
