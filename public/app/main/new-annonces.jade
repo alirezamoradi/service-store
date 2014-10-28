@@ -1,0 +1,6 @@
+.panel.panel-primary
+    .panel-heading.text-center Nouvelles Annonces
+    .panel-body
+        .row(ng-repeat="annonce in annonces | orderBy:'published':true | limitTo:10")
+            .col-md-3 {{annonce.published | date:'MMM d'}}
+            .col-md-9 {{annonce.titre}}

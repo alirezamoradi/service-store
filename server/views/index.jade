@@ -11,8 +11,11 @@ block main-content
                     li
                         a(href="/") Accueil
                     li
-                        a(href="/add-service") Déposer votre annonce
-                div(ng-include="'/partials/account/navbar-login'")
+                        a(href="/annonces") Annonces
+                    li
+                        a(href="/new-annonce") Déposer votre annonce
+                    li
+                        div(ng-include="'/partials/account/navbar-login'")
 
     section.content
         div(ng-view)

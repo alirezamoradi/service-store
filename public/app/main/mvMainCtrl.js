@@ -1,3 +1,3 @@
-angular.module('app').controller('mvMainCtrl', function($scope, mvService) {
-    $scope.services = mvService.query();
+angular.module('app').controller('mvMainCtrl', function($scope, mvAnnonce) {
+    $scope.annonces = mvAnnonce.query();
 });

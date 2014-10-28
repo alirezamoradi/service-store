@@ -1,8 +1,8 @@
 .container
     .well
-        form.form-horizontal(name"serviceForm")
+        form.form-horizontal(name"annonceForm")
             fieldset
-                legend New Service
+                legend Nouvelle Annonce
                 .form-group
                     label.col-md-2.control-label(for="region") Region
                     .col-md-10
@@ -46,6 +46,6 @@
                 .form-group
                     .col-md-10.col-md-offset-2
                         .pull-right
-                            button.btn.btn-primary(ng-click="newService()", ng-disabled="serviceForm.$invalid") Submit
+                            button.btn.btn-primary(ng-click="newAnnonce()", ng-disabled="annonceForm.$invalid") Submit
                             | &nbsp;
                             a.btn.btn-default(href="/") Cancel

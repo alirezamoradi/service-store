@@ -1,6 +1,6 @@
 var mongoose = require('mongoose'),
     userModel = require('../models/User'),
-    serviceModel = require('../models/Service');
+    annonceModel = require('../models/Annonce');
 
 module.exports = function(config){
     mongoose.connect(config.db);
@@ -10,6 +10,6 @@ module.exports = function(config){
         console.log('ServiceStore db opened');
     });
     userModel.createDefaultUsers();
-    serviceModel.createDefaultServices();
+    annonceModel.createDefaultAnnonces();
 };
 

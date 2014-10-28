@@ -1,6 +1,0 @@
-.panel.panel-primary
-    .panel-heading.text-center New Services
-    .panel-body
-        .row(ng-repeat="service in services | orderBy:'published':true | limitTo:10")
-            .col-md-3 {{service.published | date:'MMM d'}}
-            .col-md-9 {{service.titre}}
