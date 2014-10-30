@@ -2,4 +2,5 @@
     .panel-heading.text-center Annonces à la Une
     .panel-body
         .row(ng-repeat="annonce in annonces |filter:(featured.true)")
-            .col-md-12 {{annonce.titre}}
+            .col-md-12
+                a(href="/annonces/{{annonce._id}}") {{annonce.titre}}

@@ -12,6 +12,7 @@ module.exports = function(app){
     app.put('/api/users', users.updateUser);
 
     app.get('/api/annonces', annonces.getAnnonces);
+    app.get('/api/annonces/:id', annonces.getAnnonceById);
     app.post('/api/annonces', annonces.createAnnonce);
 
     app.get('/partials/*', function(req, res) {

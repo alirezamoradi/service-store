@@ -27,6 +27,9 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
         })
         .when('/annonces', { templateUrl: '/partials/annonces/annonce-list',
             controller: 'mvAnnonceListCtrl'
+        })
+        .when('/annonces/:id', { templateUrl: '/partials/annonces/annonce-details',
+            controller: 'mvAnnonceDetailCtrl'
         });
 
     $locationProvider.html5Mode({

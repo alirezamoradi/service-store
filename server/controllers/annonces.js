@@ -21,3 +21,10 @@ exports.createAnnonce = function(req, res, next){
         res.redirect('/');
     })
 };
+
+
+exports.getAnnonceById = function(req, res){
+    Annonce.findOne({_id:req.params.id}).exec(function(err,annonce){
+        res.send(annonce);
+    })
+}

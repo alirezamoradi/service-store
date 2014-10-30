@@ -1,1 +1,1 @@
-<div class="panel panel-primary"><div class="panel-heading text-center">Annonces à la Une</div><div class="panel-body"><div ng-repeat="annonce in annonces |filter:(featured.true)" class="row"><div class="col-md-12">{{annonce.titre}}</div></div></div></div>
+<div class="panel panel-primary"><div class="panel-heading text-center">Annonces à la Une</div><div class="panel-body"><div ng-repeat="annonce in annonces |filter:(featured.true)" class="row"><div class="col-md-12"><a href="/annonces/{{annonce._id}}">{{annonce.titre}}</a></div></div></div></div>

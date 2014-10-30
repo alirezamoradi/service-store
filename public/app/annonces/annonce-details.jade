@@ -1,0 +1,12 @@
+.container
+    h1 {{annonce.titre}}
+    .row
+        .col-md-6
+            h3(ng-show="annonce.featured") A la Une
+            h3 Pubilé le {{annonce.published | date}}
+
+        .col-md-6
+            .panel.panel-primary
+                .panel-heading Tags
+                .panel-body
+                    div(ng-repeat="tag in annonce.tags") {{tag}}
