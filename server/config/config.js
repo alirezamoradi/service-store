@@ -9,7 +9,7 @@ module.exports = {
         port: process.env.PORT || 3030
     },
     production: {
-        db: 'mongodb://amtechbox:2426Imt2880@ds033390.mongolab.com:33390/servicestore-db',
+        db: 'mongodb://username:password@ds033390.mongolab.com:33390/servicestore-db',
         rootPath: rootPath,
         port: process.env.PORT || 80
     }
